@@ -29,4 +29,28 @@ public class Libro {
     public void setdisponible(boolean disponible) {
         this.disponible = disponible;
     }
+
+    public void mostrarInfo() {
+        System.out.println("Titulo: " + titulo);
+        System.out.println("Autor: " + autor);
+        System.out.println("Disponible: " + disponible);
+    }
+
+    public void prestar() {
+        if (disponible) {
+            disponible = false;
+            System.out.println("El libro ha sido prestado.");
+        } else {
+            System.out.println("El libro no está disponible.");
+        }
+    }
+
+    public void devolver() {
+        if (!disponible) {
+            disponible = true;
+            System.out.println("El libro ha sido devuelto.");
+        } else {
+            System.out.println("El libro ya está disponible.");
+        }
+    }
 }
