@@ -1,6 +1,5 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        /* 
 
         Libro libro1 = new Libro();
         libro1.settitulo("El Quijote");
@@ -47,24 +46,6 @@ public class App {
         vuelo2.mostrarInfo();
         vuelo2.desembarcar(30);
         vuelo2.mostrarInfo();
-    */
-        
-        DepositoAgua deposito1 = new DepositoAgua();
-        deposito1.setCapacidad(100);
-        deposito1.setVolumenActual(50);
-        deposito1.mostrarEstado();
-        deposito1.agregarAgua(60);
-        deposito1.mostrarEstado();
-        deposito1.quitarAgua(20);
-        deposito1.mostrarEstado();
-        
-        DepositoAgua deposito2 = new DepositoAgua();
-        deposito2.setCapacidad(200);
-        deposito2.setVolumenActual(50);
-        deposito2.mostrarEstado();
-        deposito2.agregarAgua(60);
-        deposito2.mostrarEstado();
-        deposito2.quitarAgua(20);
-        deposito2.mostrarEstado();
+
     }
 }
